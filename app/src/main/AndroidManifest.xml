@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bochet.cyril.projetandroidcloud2020">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".architecture.CustomApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Parent activity means we will have back button in top of activity and go to the specified activity -->
+        <activity
+            android:name=".view.RetrofitActivity"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.RealtimeDatabaseActivity"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.FullQuoteActivity"
+            android:parentActivityName=".view.RetrofitActivity" />
+        <activity
+            android:name=".firebase.view.FirebaseLoginActivity"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.RecyclerViewActivity"
+            android:parentActivityName=".view.MainActivity" />
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

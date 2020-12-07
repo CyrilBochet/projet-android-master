@@ -1,0 +1,17 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">#DF3F0D</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="buttonMainActivity" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="android:padding">16dp</item>
+        <item name="strokeColor">@android:color/white</item>
+    </style>
+</resources>

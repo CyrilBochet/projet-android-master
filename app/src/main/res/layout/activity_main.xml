@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f7f8"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:context=".view.MainActivity">
+
+        <ImageView
+            android:id="@+id/mainImageViewLogo"
+            android:layout_width="165dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="36dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile" />
+
+        <Button
+            android:id="@+id/mainButtonRetrofit"
+            style="@style/buttonMainActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Retrofit"
+            app:layout_constraintBottom_toTopOf="@+id/mainButtonRecyclerView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/mainButtonRecyclerView"
+            style="@style/buttonMainActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Recycler View"
+            app:layout_constraintBottom_toTopOf="@+id/mainButtonActivityRealtimeDB"
+            app:layout_constraintHorizontal_bias="0.875"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainButtonRetrofit" />
+
+        <Button
+            android:id="@+id/mainButtonActivityRealtimeDB"
+            style="@style/buttonMainActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Realtime Database"
+            app:layout_constraintBottom_toTopOf="@+id/mainButtonActivityFirebase"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainButtonRecyclerView" />
+
+        <Button
+            android:id="@+id/mainButtonActivityFirebase"
+            style="@style/buttonMainActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Firebase"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/lato_bold"
+            android:letterSpacing="@dimen/material_emphasis_high_type"
+            android:text="Cyril Bochet"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainImageViewLogo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/lato_bold"
+            android:letterSpacing="0.3"
+            android:text="Master CCM 2"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/mainButtonRetrofit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.244" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

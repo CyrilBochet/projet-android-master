@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Projet Android Cloud 2020</string>
+
+    <string name="btn_add_item">Ajouter un item</string>
+    <string name="btn_remove_items">Supprimer tout</string>
+    <string name="btn_sign_up">S\'enregistrer</string>
+    <string name="btn_logout">Déconnexion</string>
+    <string name="btn_login">Connexion</string>
+
+    <plurals name="found_word">
+        <item quantity="zero">Found 0 contact</item>
+        <item quantity="one">Found 1 word</item>
+        <item quantity="other">Found 5 words</item>
+    </plurals>
+
+    <plurals name="dynamic_plurals">
+        <item quantity="zero">Plural and dynamic : %1$d word</item>
+        <item quantity="one">Plural and dynamic : %1$d word</item>
+        <item quantity="other">Plural and dynamic : Found %1$d words</item>
+    </plurals>
+    <string name="accelerometer_value_x" translatable="false">Axe X : %1$.2f</string>
+    <string name="accelerometer_value_y" translatable="false">Axe Y : %1$.2f</string>
+    <string name="accelerometer_value_z" translatable="false">Axe Z : %1$.2f</string>
+</resources>

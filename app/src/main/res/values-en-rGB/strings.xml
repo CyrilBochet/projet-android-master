@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" Android Cloud Project 2020"</string>
+    <string name="btn_add_item">Add an item</string>
+    <string name="btn_remove_items">Remove all</string>
+    <string name="btn_sign_up">Sign up</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_login">Login</string>
+</resources>
